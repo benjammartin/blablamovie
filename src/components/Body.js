@@ -12,7 +12,7 @@ var Body = React.createClass({
   render: function() {
     var reviews = this.props.reviews.sort(this.state.filter === 'Latest' ?
       function (a, b) {
-        return a.id < b.id;
+        return a.date < b.date;
       } :
       function (a, b) {
         return a.votes < b.votes;

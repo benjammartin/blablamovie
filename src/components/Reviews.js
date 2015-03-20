@@ -24,7 +24,7 @@ var Reviews = React.createClass({
     var props = this.props;
     var reviewNodes = props.reviews.map(function (review, index) {
       return (
-        <Review data={review} key={index} handleUpvote={props.handleUpvote} />
+        <Review data={review} key={review.id} handleUpvote={props.handleUpvote} />
       );
     });
     return (

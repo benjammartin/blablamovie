@@ -36,6 +36,7 @@ var UpvoteButton = React.createClass({
     );
   },
   onClick: function() {
+    console.log('this.props.id', this.props.id);
     this.props.handleUpvote(this.props.id);
   }
 });

@@ -9,7 +9,7 @@ var liItem = {
 
 var filters = [
   'Top',
-  'Lastest',
+  'Latest',
   'Bookmarks'
 ];
 
