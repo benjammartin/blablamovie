@@ -1,9 +1,19 @@
 var React = require('react');
+var Header = require('./Header');
+
+var style = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  padding: '10px',
+  width: '960px'
+};
 
 var App = React.createClass({
   render: function() {
     return (
-      <p>Hello, world!</p>
+      <div style={style}>
+        <Header />
+      </div>
     );
   }
 });
