@@ -38,8 +38,8 @@ img { vertical-align: bottom; }
 }
 
 .ul-list {
+  width: 100%;
   position: relative;
-  width: 70%;
   margin-top: 50px;
   font-weight: 300;
   text-transform: uppercase;
@@ -64,7 +64,4 @@ img { vertical-align: bottom; }
   font-weight: 500;
 }
 
-
-
-
-
+.hover-btn:hover { background: rgba(241, 241, 241, .8); }
