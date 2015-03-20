@@ -1,5 +1,6 @@
 var React = require('react');
 var Header = require('./Header');
+var Body = require('./Body');
 
 var style = {
   marginLeft: 'auto',
@@ -13,6 +14,7 @@ var App = React.createClass({
     return (
       <div style={style}>
         <Header />
+        <Body />
       </div>
     );
   }
