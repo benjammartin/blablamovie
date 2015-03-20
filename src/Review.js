@@ -1,6 +1,7 @@
 var React = require('react');
 var Tag = require('./Tag');
 var ProfilePicture = require('./ProfilePicture');
+var DiscoveredBy = require('./DiscoveredBy');
 
 var style = {
 
@@ -14,6 +15,7 @@ var Review = React.createClass({
         <div>
           <Tag>{data.tag}</Tag>
           <ProfilePicture url={data.author.picture} />
+          <DiscoveredBy>{data.author.name}</DiscoveredBy>
           <h1>{data.title}</h1>
           <p>{data.content}</p>
         </div>
@@ -21,12 +23,5 @@ var Review = React.createClass({
     );
   }
 });
-
-// {this.props.data.author}
-// {this.props.data.content}
-// {this.props.data.date}
-// {this.props.data.tag}
-// {this.props.data.title}
-// {this.props.data.votes}
 
 module.exports = Review;
