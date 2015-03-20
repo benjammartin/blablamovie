@@ -5,7 +5,7 @@ var PostButton = require('./PostButton');
 var Header = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="grid">
         <Logo />
         <PostButton />
       </div>

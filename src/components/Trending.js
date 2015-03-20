@@ -1,14 +1,13 @@
 var React = require('react');
 
-var style = {
-  float: 'right',
-  width: '30%'
-};
+var right = {
+  width: '25%'
+}
 
 var Trending = React.createClass({
   render: function() {
     return (
-      <div style={style}>
+      <div style={right} className="inline">
         Trending
       </div>
     );

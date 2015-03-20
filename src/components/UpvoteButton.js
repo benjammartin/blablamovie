@@ -1,11 +1,11 @@
 var React = require('react');
 
 var leftStyle = {
-
+  
 };
 
 var rightStyle = {
-
+  
 };
 
 var UpvoteButton = React.createClass({

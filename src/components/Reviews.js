@@ -1,9 +1,9 @@
 var React = require('react');
 var Review = require('./Review');
 
-var style = {
-  float: 'left',
-  width: '70%'
+var left = {
+  width: '70%',
+  marginTop: '40px'
 };
 
 var reviews = [
@@ -39,7 +39,7 @@ var Reviews = React.createClass({
       );
     });
     return (
-      <section style={style}>
+      <section style={left} className="inline">
         {reviewNodes}
       </section>
     );
