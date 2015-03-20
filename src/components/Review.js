@@ -5,14 +5,15 @@ var DiscoveredBy = require('./DiscoveredBy');
 
 var reviewStyle = {
   borderBottom: '1px solid #EDEDED',
-  padding: '10px 0 5px 0'
+  padding: '10px 0 5px 0',
+  fontWeight: '300'
 };
 
 var headerStyle = {
     padding: '16px 0 9px',
     fontSize: '22px',
     color: '#333333',
-    fontWeight : '700'
+    fontWeight: '900',
 };
 
 var verticalSeparatorStyle = {
