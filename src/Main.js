@@ -1,4 +1,4 @@
 var React = require('react');
-var App = require('./App');
+var App = require('./components/App');
 
 React.render(<App />, document.body);
