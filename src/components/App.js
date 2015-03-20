@@ -63,11 +63,21 @@ var App = React.createClass({
     );
   },
   handleUpvote: function(id) {
-    var reviews = React.addons.update(this.state.reviews, {
-      [id]: { votes: { $apply: function (val) { return ++val; } } }
-    });
     this.setState({
-      reviews: reviews
+      reviews: this.state.reviews.map(function (review) {
+        return {
+          author: {
+            name: review.author.name,
+            picture: review.author.picture
+          },
+          content: review.content,
+          date: review.date,
+          id: review.id,
+          tag: review.tag,
+          title: review.title,
+          votes: review.id === id ? review.votes + 1 : review.votes
+        };
+      })
     });
   }
 });

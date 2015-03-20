@@ -22,7 +22,7 @@ var subDate = {
 var Reviews = React.createClass({
   render: function() {
     var props = this.props;
-    var reviewNodes = props.reviews.map(function (review, index) {
+    var reviewNodes = props.reviews.map(function (review) {
       return (
         <Review data={review} key={review.id} handleUpvote={props.handleUpvote} />
       );
