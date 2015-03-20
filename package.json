@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
     "watchify": "^2.4.0"
   }
 }
