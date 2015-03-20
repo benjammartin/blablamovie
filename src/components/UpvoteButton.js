@@ -5,7 +5,8 @@ var button = {
   marginBottom: '20px',
   fontSize: '13px',
   fontWeight: '600',
-  display: 'inline-block'
+  display: 'inline-block',
+  cursor: 'pointer'
 };
 
 var leftStyle = {
@@ -31,7 +32,7 @@ var UpvoteButton = React.createClass({
     return (
       <span style={button}>
         <span style={leftStyle}>{this.props.votes}</span>
-        <span style={rightStyle} onClick={this.onClick}>Upvote</span>
+        <span style={rightStyle} onClick={this.onClick} className="hover-btn">Upvote</span>
       </span>
     );
   },

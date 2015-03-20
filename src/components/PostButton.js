@@ -7,10 +7,11 @@ var style = {
   fontSize: '14px',
   color: '#FFFFFF',
   letterSpacing: '1px',
-  lineHeight: '35px',
+  lineHeight: '33px',
   textAlign: 'center',
   width: '117px',
   height: '35px',
+  fontWeight: '600',
   float: 'right'
 };
 

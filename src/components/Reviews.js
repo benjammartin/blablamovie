@@ -2,7 +2,6 @@ var React = require('react');
 var Review = require('./Review');
 
 var left = {
-  width: '70%',
   marginTop: '40px'
 };
 

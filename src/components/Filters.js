@@ -4,7 +4,8 @@ var liItem = {
   marginRight: '60px',
   letterSpacing: '2px',
   color: '#9B9B9B',
-  paddingBottom: '16px'
+  paddingBottom: '16px',
+  cursor: 'pointer'
 };
 
 var filters = [

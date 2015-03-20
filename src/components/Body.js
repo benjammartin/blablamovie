@@ -3,6 +3,15 @@ var Filters = require('./Filters');
 var Reviews = require('./Reviews');
 var Trending = require('./Trending');
 
+var left = {
+  width: '60%',
+  marginRight: '40px'
+}
+
+var right = {
+  width: '32%'
+}
+
 var Body = React.createClass({
   getInitialState: function() {
     return {
@@ -20,9 +29,14 @@ var Body = React.createClass({
     );
     return (
       <div className="grid">
-        <Filters filter={this.state.filter} handleFilter={this.handleFilter} />
-        <Reviews reviews={reviews} handleUpvote={this.props.handleUpvote} />
-        <Trending />
+        <div style={left} className="inline">
+          <Filters filter={this.state.filter} handleFilter={this.handleFilter} />
+          <Reviews reviews={reviews} handleUpvote={this.props.handleUpvote} />
+        </div>
+
+        <div style={right} className="inline">
+          <Trending />
+        </div>
       </div>
     );
   },
