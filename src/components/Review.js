@@ -34,7 +34,7 @@ var Review = React.createClass({
         <DiscoveredBy name={data.author.name} />
         <h1 style={headerStyle}>{data.title}</h1>
         <p>{data.content}</p>
-        <UpvoteButton votes={data.votes} />
+        <UpvoteButton id={data.id} votes={data.votes} handleUpvote={this.props.handleUpvote} />
       </article>
     );
   }
