@@ -4,7 +4,8 @@ var ProfilePicture = require('./ProfilePicture');
 var DiscoveredBy = require('./DiscoveredBy');
 
 var reviewStyle = {
-
+  borderBottom: '1px solid #EDEDED',
+  padding: '10px 0 5px 0'
 };
 
 var headerStyle = {
@@ -22,14 +23,12 @@ var Review = React.createClass({
     var data = this.props.data;
     return (
       <article style={reviewStyle}>
-        <div>
-          <Tag>{data.tag}</Tag>
-          <ProfilePicture url={data.author.picture} />
-          <span style={verticalSeparatorStyle}></span>
-          <DiscoveredBy>{data.author.name}</DiscoveredBy>
-          <h1 style={headerStyle}>{data.title}</h1>
-          <p>{data.content}</p>
-        </div>
+        <Tag>{data.tag}</Tag>
+        <ProfilePicture url={data.author.picture} />
+        <span style={verticalSeparatorStyle}></span>
+        <DiscoveredBy>{data.author.name}</DiscoveredBy>
+        <h1 style={headerStyle}>{data.title}</h1>
+        <p>{data.content}</p>
       </article>
     );
   }
