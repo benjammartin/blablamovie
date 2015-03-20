@@ -11,7 +11,7 @@ var reviewStyle = {
 var headerStyle = {
     padding: '16px 0 9px',
     fontSize: '22px',
-    color: '#333333'
+    color: '#333333',
     fontWeight : '700'
 };
 
