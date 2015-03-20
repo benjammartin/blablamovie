@@ -8,7 +8,6 @@ var Trending = React.createClass({
   render: function() {
     return (
       <div style={right} className="inline">
-        Trending
       </div>
     );
   }
