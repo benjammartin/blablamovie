@@ -1,8 +1,9 @@
 var React = require('react');
 
 var style = {
-  width: '30px',
-  borderRadius: '50px'
+  width: '26px',
+  borderRadius: '50px',
+  verticalAlign: 'middle'
 };
 
 var ProfilePicture = React.createClass({

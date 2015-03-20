@@ -1,13 +1,20 @@
 var React = require('react');
 
 var style = {
-  width: '30px'
+  color: '#999999',
+  marginLeft: '10px',
+  display: 'inline-block',
+  verticalAlign: 'middle'
 };
+
+var author = {
+  fontWeight: '400'
+}
 
 var DiscoveredBy = React.createClass({
   render: function () {
     return (
-      <span>Discovered by <span>{this.props.name}</span></span>
+      <span style={style}>Discovered by <span style={author}>{this.props.name}</span></span>
     );
   }
 });
