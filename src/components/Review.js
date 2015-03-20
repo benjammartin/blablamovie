@@ -2,6 +2,7 @@ var React = require('react');
 var Tag = require('./Tag');
 var ProfilePicture = require('./ProfilePicture');
 var DiscoveredBy = require('./DiscoveredBy');
+var UpvoteButton = require('./UpvoteButton');
 
 var reviewStyle = {
   borderBottom: '1px solid #EDEDED',
@@ -29,9 +30,10 @@ var Review = React.createClass({
         <Tag>{data.tag}</Tag>
         <ProfilePicture url={data.author.picture} />
         <span style={verticalSeparatorStyle}></span>
-        <DiscoveredBy>{data.author.name}</DiscoveredBy>
+        <DiscoveredBy name={data.author.name} />
         <h1 style={headerStyle}>{data.title}</h1>
         <p>{data.content}</p>
+        <UpvoteButton votes={data.votes} />
       </article>
     );
   }

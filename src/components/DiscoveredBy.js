@@ -7,7 +7,7 @@ var style = {
 var DiscoveredBy = React.createClass({
   render: function () {
     return (
-      <span>Discovered by <span>{this.props.children}</span></span>
+      <span>Discovered by <span>{this.props.name}</span></span>
     );
   }
 });
