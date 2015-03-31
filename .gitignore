@@ -2,3 +2,4 @@ node_modules
 public/javascripts/main.js
 !.gitkeep
 .DS_Store
+public/stylesheets/main.css

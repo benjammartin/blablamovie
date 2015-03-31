@@ -1,13 +1,9 @@
 var React = require('react');
 
-var style = {
-  height: '37px'
-};
-
 var Logo = React.createClass({
   render: function() {
     return (
-      <img src={'/images/logo.png'} style={style} />
+      <h1 className="logo"><a href="./">blabla<span className="bolder">movie</span></a></h1>
     );
   }
 });

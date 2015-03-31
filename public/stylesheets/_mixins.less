@@ -1,0 +1,118 @@
+// CSS3 Properties
+// -------------------------
+
+// Border-radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+.transition-delay(@transition) {
+  -webkit-transition-delay: @transition;
+     -moz-transition-delay: @transition;
+       -o-transition-delay: @transition;
+          transition-delay: @transition;
+}
+
+// Animations
+.animation(@animation) {
+  -webkit-animation: @animation;
+     -moz-animation: @animation;
+          animation: @animation;
+}
+
+// Transformations
+.transform(@properties) { // For adding multiple properties
+  -webkit-transform: @properties;
+      -ms-transform: @properties;
+          transform: @properties;
+}
+.transform-style(@properties) { // For adding multiple properties
+  -webkit-transform-style: @properties;
+      -ms-transform-style: @properties;
+          transform-style: @properties;
+}
+
+// Background size
+.background-size(@size) {
+  -webkit-background-size: @size;
+     -moz-background-size: @size;
+       -o-background-size: @size;
+          background-size: @size;
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+// Text rendering - Draft
+.text-rendering(@value) {
+  -webkit-text-rendering: @value;
+          text-rendering: @value;
+}
+
+// Font smoothing - Draft
+.font-smoothing(@value) {
+  -webkit-font-smoothing: @value;
+          font-smoothing: @value;
+}
+
+// Adjust text size on iOS
+.text-size-adjust(@value) {
+  -webkit-text-size-adjust: @value;
+          text-size-adjust: @value;
+}
+
+// User select
+.user-select(@value) {
+  -webkit-user-select: @value;
+   -khtml-user-select: @value;
+     -moz-user-select: @value;
+      -ms-user-select: @value;
+          user-select: @value;
+}
+
+// Appearance
+.appearance(@value) {
+  -webkit-appearance: @value;
+     -moz-appearance: @value;
+          appearance: @value;
+}
+
+// Selections
+.selection(@background, @color) {
+  ::-moz-selection {
+    background: @background;
+    color: @color;
+  }
+  ::selection {
+    background: @background;
+    color: @color;
+  }
+}
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}

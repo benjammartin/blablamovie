@@ -1,13 +1,5 @@
 var React = require('react');
 
-var liItem = {
-  marginRight: '60px',
-  letterSpacing: '2px',
-  color: '#9B9B9B',
-  paddingBottom: '16px',
-  cursor: 'pointer'
-};
-
 var filters = [
   'Top',
   'Latest',
@@ -19,11 +11,11 @@ var Trending = React.createClass({
     var self = this;
     var filterNodes = filters.map(function (filter, index) {
       return (
-        <li onClick={self.onClick} style={liItem} className={"inline " + (filter === self.props.filter ? 'active-li' : '')} key={index}>{filter}</li>
+        <li onClick={self.onClick} className={"inline " + (filter === self.props.filter ? 'active' : '')} key={index}>{filter}</li>
       );
     });
     return (
-      <ul className="ul-list">
+      <ul className="filters-bar">
         {filterNodes}
       </ul>
     );

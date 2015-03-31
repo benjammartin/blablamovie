@@ -1,0 +1,58 @@
+.main-content {
+  .filters-bar {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 40px;
+
+    li {
+      margin-right: 60px;
+      letter-spacing: 2px;
+      color: @grey;
+      padding-bottom: 19px;
+      cursor: pointer;
+      .transition(color .4s ease);
+
+      &:hover {
+        position: relative;
+        z-index: 10;
+        color: darken(@grey, 25%);
+        border-bottom: 1px solid darken(@grey, 10%);
+      }
+
+      &.active {
+        position: relative;
+        z-index: 10;
+        color: @dark;
+        border-bottom: 1px solid @dark;
+        font-weight: 700;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 100%;
+      display: block;
+      background: @light-grey;
+      top: 32px;
+    }
+  }
+
+  .timeline-date {
+    margin-top: 14px;
+    font-size: 24px;
+    color: @dark;
+    margin-bottom: 40px;
+
+    .sub-date {
+      font-size: 16px;
+      font-weight: 300;
+      color: @grey;
+    }
+  }
+}
